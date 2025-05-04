@@ -70,14 +70,98 @@
 
   <section class="hero d-flex align-items-center text-center">
     <div class="container text">
-      <h1 class="display-3 fw-bold">Enter the World of TAFS X SPACE</h1>
+      <h1 class="display-3 fw-bold">Enter the World of SPACE</h1>
       <p class="lead mt-3">Welcome to TAFS X SPACE — your gateway to galaxies, black holes, and discoveries beyond imagination.</p>
       <p class="subtext">From planets to cosmic mysteries, we're here to fuel your curiosity about the infinite cosmos.</p>
       <a href="#planets" class="btn btn-primary mt-4">Start Exploring</a>
     </div>
   </section>
+
+
+  <!-- ====== CONSTELLATIONS SECTION ====== -->
+<section class="constellations-section">
+    <div class="container text-center">
+      <h2 class="glow-heading">Explore the Constellations</h2>
+      <p class="glow-text">Unveil the legendary star patterns that have guided explorers and inspired myths across the universe.</p>
+  
+      <div class="constellation-grid">
+        <div class="constellation-card">
+          <h4>Orion</h4>
+          <p>The hunter of the night sky, visible across the globe.</p>
+        </div>
+        <div class="constellation-card">
+          <h4>Ursa Major</h4>
+          <p>Home to the Big Dipper, pointing towards the North Star.</p>
+        </div>
+        <div class="constellation-card">
+          <h4>Andromeda</h4>
+          <p>Named after the princess of mythology, close to its galaxy.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+
+
+  <section id="planets" class="bg-black">
+    <div class="container">
+      <div class="hero-section z-3" id="hero" style="position: relative; height: 100vh; background-size: cover; background-position: center;">
+        
+        <div class="hero-content" id="heroContent">
+          <h1 id="heroTitle">Explore the Planets</h1>
+          <button id="heroButton"><a href="#explore" style="text-decoration: none; color: black;">Explore</a></button>
+        </div>
+  
+        <div class="slider" style="position: absolute; bottom: 0; width: 100%; display: flex; overflow-x: auto; gap: 20px; background: rgba(0,0,0,0.7); padding: 10px;">
+          <!-- Planet Slides -->
+          <div class="slide-item" onclick="changeSlide(this)" data-title="Mercury" data-btn="Explore Mercury">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Mercury_in_true_color.jpg">
+            <div class="overlay">Mercury</div>
+          </div>
+  
+          <div class="slide-item" onclick="changeSlide(this)" data-title="Venus" data-btn="Explore Venus">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e5/Venus-real_color.jpg">
+            <div class="overlay">Venus</div>
+          </div>
+  
+          <div class="slide-item" onclick="changeSlide(this)" data-title="Earth" data-btn="Explore Earth">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/97/The_Earth_seen_from_Apollo_17.jpg">
+            <div class="overlay">Earth</div>
+          </div>
+  
+          <div class="slide-item" onclick="changeSlide(this)" data-title="Mars" data-btn="Explore Mars">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/02/OSIRIS_Mars_true_color.jpg">
+            <div class="overlay">Mars</div>
+          </div>
+  
+          <div class="slide-item" onclick="changeSlide(this)" data-title="Jupiter" data-btn="Explore Jupiter">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e2/Jupiter.jpg">
+            <div class="overlay">Jupiter</div>
+          </div>
+  
+          <div class="slide-item" onclick="changeSlide(this)" data-title="Saturn" data-btn="Explore Saturn">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Saturn_during_Equinox.jpg">
+            <div class="overlay">Saturn</div>
+          </div>
+  
+          <div class="slide-item" onclick="changeSlide(this)" data-title="Uranus" data-btn="Explore Uranus">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/Uranus2.jpg">
+            <div class="overlay">Uranus</div>
+          </div>
+  
+          <div class="slide-item" onclick="changeSlide(this)" data-title="Neptune" data-btn="Explore Neptune">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/56/Neptune_Full.jpg">
+            <div class="overlay">Neptune</div>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </section>
   
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
