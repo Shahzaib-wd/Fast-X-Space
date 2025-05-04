@@ -4,15 +4,13 @@ body {
     padding: 0;
     background-color: rgba(0, 0, 0, 0.664);
     color: #ffffff;
-    font-family: 'Orbitron', sans-serif; /* You can include this from Google Fonts */
+    font-family: 'Orbitron', sans-serif;
   }
   
-  /* Navbar Styling */
   .navbar {
-    /* background-image: url(images.jpg); */
     background-size: cover;
     backdrop-filter: blur(10px) !important;   
-    border: 1px solid rgba(0, 255, 255, 0.2); /* neon blue line */
+    border: 1px solid rgba(0, 255, 255, 0.2);
     box-shadow: 0 0 20px #00f0ff33;
     position: fixed;
     width: 100%;
