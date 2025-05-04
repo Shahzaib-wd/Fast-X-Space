@@ -1,0 +1,162 @@
+/* Basic Reset and Body */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.664);
+    color: #ffffff;
+    font-family: 'Orbitron', sans-serif; /* You can include this from Google Fonts */
+  }
+  
+  /* Navbar Styling */
+  .navbar {
+    /* background-image: url(images.jpg); */
+    background-size: cover;
+    backdrop-filter: blur(10px) !important;   
+    border: 1px solid rgba(0, 255, 255, 0.2); /* neon blue line */
+    box-shadow: 0 0 20px #00f0ff33;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    margin-top:20px ;
+
+  }
+  
+  /* Logo Image */
+  .logo-img {
+    height: 80px;
+    width: 150px;
+  }
+  
+  /* Nav Links */
+  .navbar-nav .nav-link {
+    color: white;
+    margin-left: 1rem;
+    font-weight: bolder;
+    transition: all 0.3s ease-in-out;
+  }
+
+  
+  .navbar-nav .nav-link:hover,
+  .dropdown-item:hover {
+    color: black;
+    background-color: #00f0ff;
+    padding: auto;
+    /* border-radius: 5px; */
+    transition: 0.4s ease-in-out;
+    box-shadow: 0 0 10px #00f0ff;
+
+  }
+  
+  /* Dropdown Menu */
+  .dropdown-menu {
+    background-color: #111325;
+    border: none;
+    box-shadow: 0 0 10px #00f0ff55;
+  }
+  
+  .dropdown-item {
+    color: #ffffff;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dropdown-item:hover {
+    background-color: #1b1e3b;
+    color: #00f0ff;
+  }
+  
+  /* Button Styling */
+  .btn-outline-light {
+    border-color: #00f0ff;
+    color: #00f0ff;
+    transition: 0.3s;
+  }
+  
+  .btn-outline-light:hover {
+    background-color: #00f0ff;
+    color: #0d0f24;
+    box-shadow: 0 0 10px #00f0ff;
+  }
+  
+  /* Mobile Nav Icon */
+  .navbar-toggler {
+    border-color: #00f0ff;
+  }
+  
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%2300f0ff' viewBox='0 0 30 30'%3e%3cpath stroke='%2300f0ff' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  }
+
+
+
+  .hero {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(180deg, #0b0c1d 0%, #05060f 100%);
+    color: #ffffff;
+    background-image: url(cool-geometric-triangular-hallway-3d-rendering.jpg);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+    padding: 0 2rem;
+    text-shadow: 1px 1px 3px rgba(0, 240, 255, 0.4);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  .hero h1 {
+    text-transform: uppercase;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 3.5rem;
+    color: #00f0ff;
+    animation: slideInDown 1s ease-out;
+  }
+  
+  .hero .lead {
+    font-size: 1.25rem;
+    color: #d1d1d1;
+    animation: fadeIn 2s ease-in;
+  }
+  
+  .hero .subtext {
+    color: #a0a0a0;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    backdrop-filter: blur(10px) !important;   
+
+  }
+  
+  .hero .btn-primary {
+    background-color: #00f0ff;
+    border: none;
+    color: #0b0c1d;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .hero .btn-primary:hover {
+    background-color: #00c0cc;
+  }
+  
+  /* Animations */
+  @keyframes slideInDown {
+    from {
+      transform: translateX(-50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  
