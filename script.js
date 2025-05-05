@@ -8,3 +8,14 @@ function changeSlide(element) {
     document.getElementById('heroButton').innerText = button;
     document.getElementById('heroContent').style.display = "block";
   }
+
+
+
+  window.addEventListener('load', function () {
+    const preloader = document.getElementById('preloader');
+    setTimeout(() => {
+      preloader.style.display = 'none';
+      document.querySelector('.main-content').style.display = 'block';
+    }, 1600); // Matches slideDown timing
+  });
+  

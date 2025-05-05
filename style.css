@@ -1,4 +1,10 @@
-/* Basic Reset and Body */
+html{
+  scroll-snap-type:;
+}
+
+
+
+
 body {
     margin: 0;
     padding: 0;
@@ -21,7 +27,7 @@ body {
   /* Logo Image */
   .logo-img {
     height: 80px;
-    width: 150px;
+    width: 250px;
   }
   
   /* Nav Links */
@@ -229,6 +235,10 @@ body {
     color: #00f0ff;
     margin-bottom: 10px;
     font-size: 1.4rem;
+  }
+  #constellations img{
+    width: auto;
+    height: 300px;
   }
   
 
