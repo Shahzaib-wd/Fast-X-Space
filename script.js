@@ -1,13 +1,31 @@
+window.addEventListener('load', () => {
+  const preloader = document.getElementById('preloader');
+  const hero = document.getElementById('hero');
+  const video = document.getElementById('hero-video');
+
+  // Wait for scanner animation to finish
+  setTimeout(() => {
+    preloader.style.display = 'none';
+    hero.style.display = 'block';
+    video.play();
+  }, 3000); // scanner animation duration
+});
+
+
 function changeSlide(element) {
-    const img = element.querySelector('img').src;
-    const title = element.getAttribute('data-title');
-    const button = element.getAttribute('data-btn');
-  
-    document.getElementById('hero').style.backgroundImage = `url(${img})`;
-    document.getElementById('heroTitle').innerText = title;
-    document.getElementById('heroButton').innerText = button;
-    document.getElementById('heroContent').style.display = "block";
-  }
+  const title = element.getAttribute('data-title');
+  const btnText = element.getAttribute('data-btn');
+  const bgImage = element.getAttribute('data-bg');
+  const link = title.toLowerCase() + ".html";
+
+  document.getElementById('heroTitle').textContent = title;
+  const heroBtn = document.getElementById('heroButton');
+  heroBtn.textContent = btnText;
+  heroBtn.href = link;
+
+  document.getElementById('hero').style.backgroundImage = `url(${bgImage})`;
+}
+
 
 
 
