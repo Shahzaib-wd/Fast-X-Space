@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black;
+}
+html{
+    scroll-behavior: smooth;
+
+}
+body{
+  font-family: 'Orbitron', sans-serif;
+    background-color: aliceblue;
+    
+}
+
+.main{
+    font-size: 30px;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #00e0ff;
+    display: inline-block;
+    padding-bottom: 8px;
+}
+
+.earth-heading {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.earth-heading h1 {
+    font-size: 64px;
+    color: #ffffff;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.6);
+    letter-spacing: 5px;
+    animation: glow 2s infinite alternate;
+}
+
+/* Jupiter glow animation */
+
+@keyframes glow {
+  0% {
+      text-shadow: 0 0 10px #00d4ff;
+  }
+  100% {
+      text-shadow: 0 0 20px #00d4ff, 0 0 30px #00bcd4;
+  }
+}
+
+.container {
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+    border-bottom: 2px solid #00e0ff;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+/* Jupiter Content */
+.earth-basics {
+    display: flex;
+    flex-wrap: wrap;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 25px rgba(0, 212, 255, 0.2);
+    overflow: hidden;
+    padding: 30px;
+    gap: 30px;
+    transition: all 0.3s ease-in-out;
+}
+
+.earth-text {
+    flex: 1;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.earth-image img:hover {
+    transform: rotate(360deg);
+    transition: 3s ease-in-out;
+}
+
+.earth-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    background-image: url("img/neptune.jpg");
+    background-size:cover;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bolder;
+    width: auto;
+}
+
+.earth-heading h1{
+    backdrop-filter: blur(5px);
+    letter-spacing: 5px;
+    font-size: 7rem;
+    color: transparent;
+    -webkit-text-stroke: 2px white;
+    text-stroke:5px black;
+    text-shadow: 0 0 20px white;
+}
+
+.earth-basics{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    height: auto;
+    gap: 10px;
+}
+
+.earth-basics p{
+    width: 500px;
+    line-height: 45px;
+    font-size: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.014);
+    height: 250;
+    padding-left: 10px;
+    border-radius: 5px;
+}
+
+.earth-basics img{
+    width: 400px;
+    height: 400px;
+    border-radius: 5px;
+}
+
+/* Facts Section */
+.basic-facts {
+    padding: 30px;
+}
+
+.basic-facts h2 {
+    text-align: center;
+    color: #0077b6;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.basic-facts ul {
+    padding: 0;
+}
+
+.basic-facts li {
+    font-size: 18px;
+    padding: 8px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.basic-facts li:last-child {
+    border-bottom: none;
+}
+
+/* Life on Jupiter */
+.life-on-earth {
+    background: linear-gradient(to right, 	#5b5ddf,	#3f54ba,	#274687,	#d5d5ec,	#85addb);
+    padding: 30px;
+    border-radius: 12px;
+    font-family: 'Poppins', sans-serif;
+    color: #e8f5e9;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+.life-on-earth h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 25px;
+    color: white;
+    border-bottom: 2px solid #a5d6a7;
+    display: inline-block;
+    padding-bottom: 8px;
+}
+
+.life-on-earth ul {
+    width: 400px;
+    list-style-type: none;
+    padding: 0;
+}
+
+.life-data{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 30px;
+    align-items: center;
+    height: auto;
+    flex-wrap: wrap;
+    
+}
+
+.life-on-earth li {
+    font-size: 17px;
+    line-height: 1.7;
+    margin-bottom: 12px;
+    border-left: 4px solid #a5d6a7;
+    padding-left: 12px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 6px;
+}
+
+/* Surface and Atmosphere Section */
+.surface-water {
+    padding: 30px;
+    border-radius: 10px;
+    font-family: 'OpenStreetMap Carto', sans-serif;
+}
+
+.surface-water h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.surface-water ul {
+    padding: 0;
+}
+
+.surface-water li {
+    font-size: 18px;
+    padding: 8px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.surface-water li:last-child {
+    border-bottom: none;
+}

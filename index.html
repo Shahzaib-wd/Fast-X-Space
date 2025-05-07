@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TAFS X SPACE</title>
+  <title>FAST X SPACE</title>
+  <link rel="icon" type="image/png" href="logo.jpg">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
@@ -16,7 +17,7 @@
 
   <nav class="navbar navbar-expand-lg navbar-dark" data-aos="fade-down" data-aos-delay="500">
     <div class="container-fluid">
-      <a class="navbar-brand" href="index.html"><img src="main-logo.jpg" width="300" height="100" alt="logo" class="logo-img" /></a>
+      <a class="navbar-brand" href="index.html"><img src="logo.jpg" width="300" height="100" alt="logo" class="logo-img" /></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -38,7 +39,7 @@
               <li><a class="dropdown-item" href="mercury.html">Mars</a></li>
               <li><a class="dropdown-item" href="jupiter.html">Jupiter</a></li>
               <li><a class="dropdown-item" href="saturn.html">Saturn</a></li>
-              <li><a class="dropdown-item" href="">Uranus</a></li>
+              <li><a class="dropdown-item" href="uranus.html">Uranus</a></li>
               <li><a class="dropdown-item" href="neptune.html">Neptune</a></li>
             </ul>
           </li>
@@ -48,9 +49,9 @@
               Cosmic Concepts
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Evolution Of Earth</a></li>
-              <li><a class="dropdown-item" href="#">Comets</a></li>
-              <li><a class="dropdown-item" href="#">Latest development in astronomy</a></li>
+              <li><a class="dropdown-item" href="evolution.html">Evolution Of Earth</a></li>
+              <li><a class="dropdown-item" href="comets.html">Comets</a></li>
+              <li><a class="dropdown-item" href="astronomy.html">Latest development in astronomy</a></li>
             </ul>
           </li>
 
@@ -59,9 +60,9 @@
               Discoveries
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Top Observatories</a></li>
-              <li><a class="dropdown-item" href="#">Constellations</a></li>
-              <li><a class="dropdown-item" href="#">Big bang theory</a></li>
+              <li><a class="dropdown-item" href="observatories.html">Top Observatories</a></li>
+              <li><a class="dropdown-item" href="constellation.html">Constellations</a></li>
+              <li><a class="dropdown-item" href="big-bang.html">Big bang theory</a></li>
             </ul>
           </li>
 
@@ -74,7 +75,7 @@
   </nav>
 
 
-  <section class="hero d-flex align-items-center">
+  <section id="home" class="hero d-flex align-items-center">
     <video autoplay muted playsinline id="bgVideo">
       <source src="bg-vid.mp4" type="video/mp4">
       Your browser does not support HTML5 video.
@@ -83,8 +84,8 @@
       <div class="row">
         <div class="col-lg-6 text-center text-lg-start">
           <h1 class="display-3 fw-bold">let's, dive in <span>SPACE</span></h1>
-          <p class="lead mt-3">Welcome to TAFS X SPACE — your gateway to galaxies, black holes, and discoveries beyond imagination.</p>
-          <a href="#planets" class="btn btn-primary mt-4">Start Exploring</a>
+          <p class="lead mt-3">Welcome to FAST X SPACE — your gateway to galaxies, black holes, and discoveries beyond imagination.</p>
+          <a href="#hero" class="btn btn-primary mt-4" data-aos="fade-right" data-aos-delay="1000">Start Exploring</a>
         </div>
       </div>
     </div>
@@ -93,17 +94,20 @@
 
 
  <!-- Constellations Section -->
+
+
 <section id="constellations" class="py-5" style="background-color: #0b0c10; color: #f8f9fa;">
   <div class="container">
-    <h1 class="text-center head mb-5">
+    <h1 class="text-center head mb-5" style="color: #00f0ff;">
       Constellations
     </h1>
+    <hr>
     <div class="row row-cols-1 row-cols-md-3 g-4">
 
  
       <!-- Cassiopeia -->
       <div class="col" data-aos="fade-up" data-aos-delay="300">
-        <div class="card h-100 text-light" style="background-color: #1a1a2e; border: 1px solid #ffc107;">
+        <div class="card h-100 text-light" style="background-color: #1a1a2e; ">
           <img src="Cassiopeia.jpg" class="card-img-top" alt="Cassiopeia">
           <div class="card-body">
             <h5 class="card-title">Cassiopeia</h5>
@@ -115,7 +119,7 @@
 
       <!-- Scorpius -->
       <div class="col" data-aos="fade-up" data-aos-delay="400">
-        <div class="card h-100 text-light" style="background-color: #1a1a2e; border: 1px solid #ffc107;">
+        <div class="card h-100 text-light" style="background-color: #1a1a2e;">
           <img src="scorpio.jpg" class="card-img-top" alt="Scorpius">
           <div class="card-body">
             <h5 class="card-title">Scorpius</h5>
@@ -127,7 +131,7 @@
 
       <!-- Leo -->
       <div class="col" data-aos="fade-up" data-aos-delay="500">
-        <div class="card h-100 text-light" style="background-color: #1a1a2e; border: 1px solid #ffc107;">
+        <div class="card h-100 text-light" style="background-color: #1a1a2e; ">
           <img src="leo.jpg" class="card-img-top" alt="Leo">
           <div class="card-body">
             <h5 class="card-title">Leo</h5>
@@ -136,17 +140,65 @@
           </div>
         </div>
       </div>
-
     </div>
-  </div>
+    </div>
 </section>
 
 
 
+<section id="comet">
+  <div class="container">
+    <h1>Comet</h1>
+    <hr>
+
+    <div class="row" data-aos="fade-up" data-aos-delay="200">
+      <div class="col-sm-12 col-md-6 col-lg-6">
+        <div class="card">
+          <img src="haley-comet.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Haley's Comet</h5>
+            <p class="card-text">Halley's Comet is the only known short-period comet that is consistently visible to the naked eye from Earth, appearing every 72–80 years.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-12 col-md-6 col-lg-6">
+        <div class="card">
+          <img src="great-comet.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Great Comet</h5>
+            <p class="card-text">a sung-through musical adaptation of a 70-page segment from Leo Tolstoy's 1869 novel War and Peace. The show was written by composer.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-12 col-md-6 col-lg-6">
+        <div class="card">
+          <img src="inkeya-comet.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Ikeya Comet</h5>
+            <p class="card-text">Comet Ikeya–Seki, formally designated C/1965 S1, 1965 VIII, and 1965f, was a long-period comet discovered independently by Kaoru Ikeya and Tsutomu Seki.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-12 col-md-6 col-lg-6">
+        <div class="card">
+          <img src="hayakute-comet.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Hayakutake Comet</h5>
+            <p class="card-text">this is also known as Comet C/1996 B2, was a bright, long-tailed comet that was visible in the night sky in 1996. It was discovered on January 30, 1996.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="hero-section" id="hero">
   <div class="hero-content">
     <h1 id="heroTitle">Explore the Planets</h1>
-    <a id="heroButton" href="earth.html">Explore Earth</a>
+    <a id="heroButton" href="#home">Back To Top</a>
   </div>
 
   <div class="slider">
@@ -192,7 +244,123 @@
   </div>
 </section>
 
+
+
+<section id="astronomy-updates" class="py-5">
+  <div class="container-fluid px-5">
+    <h2 class="text-center section-title">Latest Astronomy Updates</h2>
+    <p class="text-center section-subtitle">Explore the newest milestones in our quest to understand the cosmos.</p>
+
+    <!-- Update 1 -->
+    <div class="row align-items-center my-5" data-aos="fade-down" data-aos-delay="300">
+      <div class="col-12 col-md-6 mb-4 mb-md-0">
+        <img src="jade.jpg" class="img-fluid rounded w-100" alt="James Webb Discovery">
+        <h2 id="h2">LATEST</h2>
+      </div>
+      <div class="col-12 col-md-6 text-light">
+        <h3>James Webb Detects Galaxy from Dawn of Time</h3>
+        <p>The telescope has observed a galaxy estimated to be 13.6 billion years old, providing groundbreaking data on the universe’s first billion years.</p>
+      </div>
+    </div>
+
+    <!-- Update 2 -->
+    <div class="row align-items-center my-5 flex-md-row-reverse" data-aos="fade-up" data-aos-delay="500">
+      <div class="col-12 col-md-6 mb-4 mb-md-0">
+        <img src="habitatle.webp" class="img-fluid rounded w-100" alt="Habitable Exoplanet">
+        <h2 id="h2">LATEST</h2>
+      </div>
+      <div class="col-12 col-md-6 text-light">
+        <h3>New Habitable Zone Exoplanet Found</h3>
+        <p>A rocky exoplanet with possible atmosphere and water traces discovered orbiting a nearby star — a potential candidate for future space missions.</p>
+      </div>
+    </div>
+
+    <!-- Update 3 -->
+    <div class="row align-items-center my-5" data-aos="fade-down" data-aos-delay="700">
+      <div class="col-12 col-md-6 mb-4 mb-md-0">
+        <img src="base.webp" class="img-fluid rounded w-100" alt="Lunar Base Plans">
+        <h2 id="h2">LATEST</h2>
+      </div>
+      <div class="col-12 col-md-6 text-light">
+        <h3>NASA & ESA Plan First Moon Base by 2030</h3>
+        <p>International space agencies team up to launch the first permanent human habitat on the Moon, unlocking a new era of lunar exploration.</p>
+      </div>
+    </div>
+
+    <!-- See More Button -->
+    <div class="text-center mt-4">
+      <a href="astronomy.html" class="btn btn-primary px-4 py-2">See More Updates</a>
+    </div>
+  </div>
+</section>
+
+
   
+
+
+
+
+
+
+
+
+
+
+<footer class="footer text-light py-5" style="background: rgba(0, 0, 0, 0.71)">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-4 mb-4 mb-md-0 d-flex align-items-center flex-column">
+        <img src="logo.jpg" alt="FAST X SPACE" width="180" class="me-2" />
+        <h4 style="margin: 0; font-size: 1.2rem; font-weight: bold; -webkit-text-stroke: 1px #00ffff; color: transparent;">
+          FAST <span style="color: #00ffff; -webkit-text-stroke: 0;">X</span> SPACE
+        </h4>
+      </div>
+
+      <div class="col-md-4 mb-4 mb-md-0">
+        <h5 class="mb-3">Explore Planets</h5>
+        <ul class="list-unstyled">
+          <li><a href="mercury.html" class="footer-link">Mercury</a></li>
+          <li><a href="venus.html" class="footer-link">Venus</a></li>
+          <li><a href="earth.html" class="footer-link">Earth</a></li>
+          <li><a href="mars.html" class="footer-link">Mars</a></li>
+          <li><a href="jupiter.html" class="footer-link">Jupiter</a></li>
+          <li><a href="saturn.html" class="footer-link">Saturn</a></li>
+          <li><a href="uranus.html" class="footer-link">Uranus</a></li>
+          <li><a href="neptune.html" class="footer-link">Neptune</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-4">
+        <h5 class="mb-3">Contact</h5>
+        <ul class="list-unstyled">
+          <li>Email: <a href="mailto:fastxspace@email.com" class="footer-link">Alphathewebdeveloper@email.com</a></li>
+          <li>Phone: <a href="tel:+1234567890" class="footer-link">+92321 2250 721</a></li>
+          <li>
+            <a href="https://github.com/shahzaib-wd" class="footer-link" target="_blank">
+              <i class="fab fa-github"></i> GitHub
+            </a> |
+            <a href="https://www.facebook.com" class="footer-link" target="_blank">
+              <i class="fab fa-facebook"></i> Facebook
+            </a> |
+            <a href="https://www.linkedin.com" class="footer-link" target="_blank">
+              <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+    <hr class="border-top border-secondary mt-4" />
+    <p class="text-center mb-0" style="font-size: 0.9rem;">&copy; 2025 FAST X SPACE. All rights reserved.</p>
+  </div>
+</footer>
+
+
+
+<button id="backToTop" title="Go to top">&#8679;</button>
+
+
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 <script>
   AOS.init();

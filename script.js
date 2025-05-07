@@ -37,3 +37,23 @@ function changeSlide(element) {
     }, 1600); // Matches slideDown timing
   });
   
+
+
+
+   // Show/hide button
+   window.onscroll = function () {
+    const btn = document.getElementById("backToTop");
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 300) {
+      btn.style.display = "block";
+    } else {
+      btn.style.display = "none";
+    }
+  };
+
+  // Scroll to top smoothly
+  document.getElementById("backToTop").addEventListener("click", function () {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });

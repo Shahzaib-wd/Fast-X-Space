@@ -1,3 +1,9 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 html{
   scroll-behavior: smooth;
 }
@@ -8,13 +14,13 @@ html{
 body {
     margin: 0;
     padding: 0;
-    background-color: rgba(0, 0, 0, 0.664);
+    background-color: black;
     color: #ffffff;
     font-family: 'Orbitron', sans-serif;
+    width: 100%;
   }
   
   .navbar {
-    background-size: cover;
     backdrop-filter: blur(10px) !important;   
     border: 1px solid rgba(0, 255, 255, 0.2);
     box-shadow: 0 0 20px #00f0ff33;
@@ -27,7 +33,7 @@ body {
   
   .logo-img {
     height: 100px;
-    width: 250px;
+    width: 200px;
   }
   
   /* Nav Links */
@@ -142,7 +148,7 @@ body {
   }
   
   .hero a.btn:hover {
-    box-shadow: 0 0 20px #00f0ff;
+    box-shadow: 0 0 20px #00f0ff !important;
     color: #000;
   }
   
@@ -173,7 +179,7 @@ body {
 
 
   #constellations {
-    background-image: url(bg.jpg);
+    background-image: url(bgg.jpg);
     padding: 80px 20px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -182,7 +188,14 @@ body {
   #constellation .head {
     color: #00f0ff !important;
   }
-  
+  #constellations hr{
+    width: 100px;
+    height: 4px;
+    background-color: #00f0ff;
+    border: none;
+    margin: 0 auto 50px;
+    box-shadow: 0 0 15px #00f0ff;
+  }
 
   
   .constellation-grid {
@@ -192,23 +205,21 @@ body {
     gap: 30px;
   }
   
-  .constellation-card {
+  #constellations .card {
     background: rgba(255, 255, 255, 0.05);
-    border: 1px solid #2f2f2f !important;
-    padding: 20px 30px;
-    width: 280px;
+    border: 1px solid #00ffff;
     border-radius: 15px;
     transition: 0.3s;
     backdrop-filter: blur(5px);
     box-shadow: 0 0 15px #110033;
   }
   
-  .constellation-card:hover {
+  #constellations .card:hover {
     box-shadow: 0 0 30px #00ffff;
     transform: translateY(-5px);
   }
   
-  .constellation-card h5 {
+  #constellations .card h5 {
     color: #00f0ff !important;
     margin-bottom: 10px;
     font-size: 1.4rem;
@@ -216,6 +227,8 @@ body {
   #constellations img{
     width: auto;
     height: 300px;
+    border-radius: 10px;
+    margin: 5px;
   }
   #constellations a{
     background-color: #00f0ff !important;
@@ -229,6 +242,68 @@ body {
   }
   
 
+
+  #comet {
+    background: radial-gradient(ellipse at center, #0a0a0a 0%, #000000 100%);
+    padding: 80px 20px;
+    color: #ffffff;
+    width: 100%;
+  }
+  
+  #comet h1 {
+    text-align: center;
+    color: #00f0ff;
+    font-size: 3rem;
+    text-shadow: 0 0 20px #00f0ff;
+    margin-bottom: 30px;
+    font-weight: bold;
+  }
+  
+  #comet hr {
+    width: 100px;
+    height: 4px;
+    background-color: #00f0ff;
+    border: none;
+    margin: 0 auto 50px;
+    box-shadow: 0 0 15px #00f0ff;
+  }
+  
+  #comet .card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid #00f0ff44;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 0 20px #00f0ff22;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: 0.4s ease;
+    margin: 20px;
+  }
+  
+  #comet .card:hover {
+    box-shadow: 0 0 30px #00f0ff;
+    transform: translateX(20px);
+  }
+  
+  #comet .card-img-top {
+    height: 250px;
+    object-fit: cover;
+    border-bottom: 1px solid #00ffff;
+  }
+  
+  #comet .card-title {
+    color: #00f0ff;
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  #comet .card-text {
+    color: #cccccc;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  
 
   
 
@@ -286,7 +361,7 @@ body {
     align-items: center;
     gap: 10px;
     overflow-x: auto;
-    gap: 15px;
+    gap: 25px;
     backdrop-filter: blur(10px);
     padding: 15px 10px;
   }
@@ -325,3 +400,152 @@ body {
       padding: 20px;
     }
   }
+
+
+
+  #astronomy-updates {
+    background: linear-gradient(to right, #0b0e1a, #12162a);
+    width: 100%;
+    padding: 60px 0;
+  }
+  
+  #astronomy-updates .section-title {
+    color: #00f0ff;
+    font-size: 2.5rem;
+    text-shadow: 0 0 10px #00f0ff88;
+  }
+  
+  #astronomy-updates .section-subtitle {
+    color: #bbb;
+    max-width: 700px;
+    margin: auto;
+    font-size: 1rem;
+  }
+  
+  #astronomy-updates h3 {
+    color: #00f0ff;
+    text-shadow: 0 0 6px #00f0ff33;
+    margin-bottom: 15px;
+  }
+  
+  #astronomy-updates p {
+    font-size: 1rem;
+    color: #dcdcdc;
+    line-height: 1.6;
+  }
+  
+  #astronomy-updates img {
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.1);
+    height: auto;
+    width: 100%;
+    max-height: 350px;
+    object-fit: cover;
+  }
+  
+  #astronomy-updates a.btn {
+    background-color: #00ffff;
+    color: black;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 10px #00ffff99;
+  }
+  
+  #astronomy-updates a.btn:hover {
+    box-shadow: 0 0 15px #00ffff;
+    transform: scale(1.07);
+  }
+
+
+  #astronomy-updates #h2{
+
+    background-color:#00ffff;
+    color: red;
+    padding: 5px;
+    border: none;
+    /* width: max-content; */
+  }
+  #astronomy-updates img:hover{
+    transform: scale(1.02);
+    transition: all 0.3s ease;
+    border: 1 px solid #00ffff;
+  }
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  footer .row{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    height: auto;
+    width: 100%;
+    text-align: center;
+  }
+
+
+  .footer-link {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+
+  .footer-link:hover {
+    color: #00ffff;
+    transform: translateY(-3px);
+  }
+
+  .footer-link:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(0, 255, 255, 0.5);
+  }
+
+  .footer i {
+    font-size: 1.2rem;
+    margin-right: 5px;
+  }
+
+  .footer h5 {
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+
+  /* Social icon spacing */
+  .footer a {
+    display: inline-flex;
+    align-items: center;
+  }
+
+
+
+  #backToTop {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 999;
+    background-color: #00ffff;
+    color: #000;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+    box-shadow: 0 0 10px #00ffff80;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  #backToTop:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px #00ffff;
+  }
+  
