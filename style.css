@@ -148,8 +148,9 @@ body {
   }
   
   .hero a.btn:hover {
-    box-shadow: 0 0 20px #00f0ff !important;
+    box-shadow: 0 0 20px #00f0ff;
     color: #000;
+    z-index: 999;
   }
   
   /* Animations */
@@ -175,7 +176,7 @@ body {
     }
   }
   
-  
+
 
 
   #constellations {
@@ -244,7 +245,9 @@ body {
 
 
   #comet {
-    background: radial-gradient(ellipse at center, #0a0a0a 0%, #000000 100%);
+    background-image: url(cool-geometric-triangular-hallway-3d-rendering.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     padding: 80px 20px;
     color: #ffffff;
     width: 100%;
@@ -283,6 +286,7 @@ body {
     box-shadow: 0 0 30px #00f0ff;
     transform: translateX(20px);
   }
+
   
   #comet .card-img-top {
     height: 250px;
@@ -310,7 +314,7 @@ body {
 
   .hero-section {
     height: 100vh;
-    background-image: url(cool-geometric-triangular-hallway-3d-rendering.jpg); 
+    background: url(planet-earth-astronaut-stands-on-the-looking-at_9601215.jpg!w700wp.webp);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -408,6 +412,14 @@ body {
     width: 100%;
     padding: 60px 0;
   }
+  #astronomy-updates hr{
+    width: 100px;
+    height: 4px;
+    background-color: #00f0ff;
+    border: none;
+    margin: 0 auto 50px;
+    box-shadow: 0 0 15px #00f0ff;
+  }
   
   #astronomy-updates .section-title {
     color: #00f0ff;
@@ -476,7 +488,46 @@ body {
 
 
 
+  #newsletter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    background-image: url(news.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #00ffff;
+    border-bottom: 2px solid #00ffff;
+  }
 
+  #newsletter hr{
+    width: 100px;
+    height: 4px;
+    background-color: black;
+    border: none;
+    margin: 0 auto 50px;
+    box-shadow: 0 0 15px #00f0ff;
+  }
+
+  #newsletter h1{
+    font-size: 2rem;
+    font-weight: bolder;
+  }
+
+  #newsletter #email{
+    height: 50px;
+    width: 300px;
+    border: none;
+    text-align: center;
+  }
+
+  #newsletter #submit{
+    height: 50px;
+    width: 100px;
+    border: none;
+    background-color:#00f0ff ;
+  }
 
 
 

@@ -57,3 +57,23 @@ function changeSlide(element) {
       behavior: "smooth"
     });
   });
+
+
+
+  // form submission
+
+  const form = document.getElementById("myForm");
+
+  form.addEventListener("submit", function(event) {
+    event.preventDefault(); 
+
+    const emailInput = document.getElementById("email");
+    const email = emailInput.value.trim();
+
+    if (email === "") {
+      alert("Please enter your email.");
+    } else {
+      alert("Thank you, We got your email: " + email);
+      emailInput.value = ""; 
+    }
+  });
