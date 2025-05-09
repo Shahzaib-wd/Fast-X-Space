@@ -13,6 +13,39 @@ body{
   color: white;    
 }
 
+*, a, button {
+  cursor: none !important;
+}
+
+.cursor-glow {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #00ffff; 
+  position: fixed;
+  pointer-events: none;
+  z-index: 9998;
+  transform: translate(-50%, -50%);
+  transition: transform 0.15s ease, background-color 0.3s ease, opacity 0.4s;
+  backdrop-filter: blur(2px);
+  mix-blend-mode: difference;
+}
+
+.cursor-img {
+  width: 30px;
+  height: 30px;
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  transition: transform 0.1s ease;
+}
+
+.cursor-click {
+  transform: translate(-50%, -50%) scale(0.6);
+  background-color: blue;
+}
+
 
 .navbar {
     backdrop-filter: blur(10px) !important;   

@@ -77,3 +77,30 @@ function changeSlide(element) {
       emailInput.value = ""; 
     }
   });
+
+
+
+const glow = document.getElementById("cursorGlow");
+const img = document.getElementById("cursorImg");
+
+let timeout;
+
+document.addEventListener("mousemove", (e) => {
+  glow.style.left = img.style.left = e.clientX + "px";
+  glow.style.top = img.style.top = e.clientY + "px";
+
+  glow.style.opacity = 1;
+
+  clearTimeout(timeout);
+  timeout = setTimeout(() => {
+    glow.style.opacity = 0; // Hide glow if idle
+  }, 1000);
+});
+
+document.addEventListener("mousedown", () => {
+  glow.classList.add("cursor-click");
+});
+
+document.addEventListener("mouseup", () => {
+  glow.classList.remove("cursor-click");
+});
