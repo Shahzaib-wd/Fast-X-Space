@@ -501,6 +501,13 @@ body {
     border-bottom: 2px solid #00ffff;
   }
 
+  #newsletter .input{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
   #newsletter hr{
     width: 100px;
     height: 4px;
