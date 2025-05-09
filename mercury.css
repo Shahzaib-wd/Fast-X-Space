@@ -27,7 +27,7 @@ body{
   }
   
   .logo-img {
-    height: 100px;
+    height: 60px;
     width: 200px;
   }
   
@@ -171,7 +171,7 @@ body{
 .earth-heading h1{
     backdrop-filter: blur(5px);
     letter-spacing: 5px;
-    font-size: 4rem;
+    font-size: 3rem;
     color: transparent;
     -webkit-text-stroke: 2px white;
     text-stroke:5px black;
