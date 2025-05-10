@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TAFSxSPACE | Leo</title>
+      <link rel="icon" type="image/png" href="logo.jpg">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="leo.css"> 
+</head>
+<body>
+
+            <nav class="navbar navbar-expand-lg navbar-dark" data-aos="fade-down" data-aos-delay="500">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"><img src="fastxspace.png" width="300" height="100" alt="logo" class="logo-img" /></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+    
+    
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="planetsDropdown" role="button" data-bs-toggle="dropdown">
+                  Planets
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="mercury.html">Mercury</a></li>
+                    <li><a class="dropdown-item" href="venus.html">Venus</a></li>
+                  <li><a class="dropdown-item" href="earth.html">Earth</a></li>
+                  <li><a class="dropdown-item" href="mars.html">Mars</a></li>
+                  <li><a class="dropdown-item" href="jupiter.html">Jupiter</a></li>
+                  <li><a class="dropdown-item" href="saturn.html">Saturn</a></li>
+                  <li><a class="dropdown-item" href="uranus.html">Uranus</a></li>
+                  <li><a class="dropdown-item" href="neptune.html">Neptune</a></li>
+                </ul>
+              </li>
+    
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="conceptsDropdown" role="button" data-bs-toggle="dropdown">
+                  Cosmic Concepts
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="evolution.html">Evolution Of Earth</a></li>
+                  <li><a class="dropdown-item" href="comets.html">Comets</a></li>
+                  <li><a class="dropdown-item" href="astronomy.html">Latest development in astronomy</a></li>
+                </ul>
+              </li>
+    
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="discoveriesDropdown" role="button" data-bs-toggle="dropdown">
+                  Discoveries
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="observatories.html">Top Observatories</a></li>
+                  <li><a class="dropdown-item" href="constellation.html">Constellations</a></li>
+                  <li><a class="dropdown-item" href="big-bang.html">Big bang theory</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">Blog</a>
+              </li>
+    
+
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
+<header>
+    <h1>Leo</h1>
+</header>
+
+<section>
+    <h2>About Leo</h2>
+    <p>Leo is a prominent constellation that represents the lion in the sky. It is one of the twelve signs of the zodiac and is visible during the late spring and summer months in the northern hemisphere. Leo is known for its bright stars, including Regulus, the "heart of the lion".</p>
+    <p>The constellation is rich in mythology and symbolism, representing strength, courage, and leadership. It is visible in the evening skies during the summer months, making it a favorite for stargazers. In ancient cultures, Leo was often associated with kings and royalty due to its bright, regal appearance.</p>
+    <img src="leo.jpg" alt="Leo Constellation">
+</section>
+
+<section>
+    <h2>Interesting Facts</h2>
+    <ul>
+        <li>Leo is home to the bright star Regulus, which marks the heart of the lion.</li>
+        <li>The constellation is often associated with strength, courage, and leadership.</li>
+        <li>Leo has many galaxies, clusters, and nebulae within it.</li>
+        <li>It is one of the most easily recognizable constellations in the sky, shaped like a backward question mark.</li>
+        <li>In ancient cultures, Leo was associated with royalty and the sun.</li>
+    </ul>
+</section>
+
+<section>
+    <h2>How to Spot Leo</h2>
+    <p>Leo is visible in the northern hemisphere during the late spring and summer months. To spot Leo, look for a backward question mark shape that forms the lion's mane, and the bright star Regulus marks the heart of the lion.</p>
+    <p>The constellation is easy to spot with a dark sky and can be found near the constellations of Virgo and Cancer. It’s an iconic constellation that’s perfect for stargazing enthusiasts.</p>
+</section>
+
+<div class="cursor-glow" id="cursorGlow"></div>
+<img src="img/cursor.png" class="cursor-img" id="cursorImg" />
+<script>
+
+
+      const glow = document.getElementById("cursorGlow");
+const img = document.getElementById("cursorImg");
+
+let timeout;
+
+document.addEventListener("mousemove", (e) => {
+  glow.style.left = img.style.left = e.clientX + "px";
+  glow.style.top = img.style.top = e.clientY + "px";
+
+  glow.style.opacity = 1;
+
+  clearTimeout(timeout);
+  timeout = setTimeout(() => {
+    glow.style.opacity = 0; // Hide glow if idle
+  }, 1000);
+});
+
+document.addEventListener("mousedown", () => {
+  glow.classList.add("cursor-click");
+});
+
+document.addEventListener("mouseup", () => {
+  glow.classList.remove("cursor-click");
+});
+</script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+
+
+</body>
+</html>

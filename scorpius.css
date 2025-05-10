@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Orbitron', sans-serif;
+    background-color: rgba(0, 0, 0, 0.788);
+    color: white;
+    line-height: 1.6;
+}
+
+
+*, a, button {
+  cursor: none !important;
+}
+
+.cursor-glow {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #00ffff; 
+  position: fixed;
+  pointer-events: none;
+  z-index: 9998;
+  transform: translate(-50%, -50%);
+  transition: transform 0.15s ease, background-color 0.3s ease, opacity 0.4s;
+  backdrop-filter: blur(2px);
+  mix-blend-mode: difference;
+}
+
+.cursor-img {
+  width: 30px;
+  height: 30px;
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  transition: transform 0.1s ease;
+}
+
+.cursor-click {
+  transform: translate(-50%, -50%) scale(0.6);
+  background-color: blue;
+}
+
+.navbar {
+    backdrop-filter: blur(10px) !important;   
+    border: 1px solid rgba(0, 255, 255, 0.2);
+    box-shadow: 0 0 20px #00f0ff33;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+
+
+  }
+  
+  .logo-img {
+    height: 60px;
+    width: 200px;
+  }
+  
+  /* Nav Links */
+  .navbar-nav .nav-link {
+    color: white;
+    margin-left: 1rem;
+    font-weight: bolder;
+    transition: all 0.3s ease-in-out;
+    margin-left: auto;
+  }
+
+  
+  .navbar-nav .nav-link:hover,
+  .dropdown-item:hover {
+    color: black;
+    background-color: #00f0ff;
+    padding: auto;
+    /* border-radius: 5px; */
+    transition: 0.4s ease-in-out;
+    box-shadow: 0 0 10px #00f0ff;
+
+  }
+  
+  /* Dropdown Menu */
+  .dropdown-menu {
+    background-color: #111325;
+    border: none;
+    box-shadow: 0 0 10px #00f0ff55;
+  }
+  
+  .dropdown-item {
+    color: #ffffff;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dropdown-item:hover {
+    background-color: #1b1e3b;
+    color: #00f0ff;
+  }
+  
+
+  
+  /* Mobile Nav Icon */
+  .navbar-toggler {
+    border-color: #00f0ff;
+  }
+  
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%2300f0ff' viewBox='0 0 30 30'%3e%3cpath stroke='%2300f0ff' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  }
+
+
+header {
+    background-image: url('img/scorpio-cover.jpg'); /* Replace with the appropriate image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 100%;
+    font-size: 3.5rem;
+    text-wrap: wrap;
+    text-align: center;
+}
+
+header h1 {
+    color: transparent;
+    -webkit-text-stroke: 1px #00d1ff;
+    text-align: center;
+}
+
+section {
+    margin-top: 20px;
+    max-width: 900px;
+    margin: 0 auto 40px auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.111);
+    border-radius: 10px;
+    text-align: center ;
+}
+
+section h2 {
+    color: #00d1ff;
+    margin-bottom: 10px;
+}
+
+section p {
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 3rem;
+    }
+
+    section {
+        padding: 15px;
+    }
+}
