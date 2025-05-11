@@ -72,7 +72,7 @@ body {
   }
   
   .logo-img {
-    height: 60px;
+    height: 50px;
     width: 200px;
   }
   
@@ -152,7 +152,7 @@ body {
     min-height: 100%;
     object-fit: cover;
     z-index: -1;
-    filter: brightness(0.4);
+    filter: brightness(0.5);
   }
   
   .hero .container.text {
@@ -285,7 +285,7 @@ body {
 
 
   #comet {
-    background-image: url(cool-geometric-triangular-hallway-3d-rendering.jpg);
+    background-image: url(flowing-dots-background_1048-10672.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     padding: 80px 20px;
@@ -522,6 +522,40 @@ body {
     border: 1 px solid #00ffff;
   }
 
+
+  #map{
+    background: linear-gradient(to right, #0b0e1a, #12162a);
+    height: auto;
+    padding: 20px;
+  }
+
+  #map h1{
+    text-align: center;
+    color: #00f0ff;
+    padding-top: 20px;
+  }
+
+    #map hr {
+    width: 100px;
+    height: 4px;
+    background-color: #00f0ff;
+    border: none;
+    margin: 0 auto 50px;
+    box-shadow: 0 0 15px #00f0ff;
+  }
+
+  #map .map{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  #map .map iframe{
+    width: 100%;
+  }
+
+
+
   
 
 
@@ -533,6 +567,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 30px;
     height: 60vh;
     background-image: url(news.jpg);
     background-size: cover;
@@ -545,7 +580,7 @@ body {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 30px;
   }
 
   #newsletter hr{
