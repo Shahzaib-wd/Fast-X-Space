@@ -1,15 +1,11 @@
 window.addEventListener('load', () => {
-  const preloader = document.getElementById('preloader');
   const hero = document.getElementById('hero');
   const video = document.getElementById('hero-video');
 
-  // Wait for scanner animation to finish
-  setTimeout(() => {
-    preloader.style.display = 'none';
-    hero.style.display = 'block';
-    video.play();
-  }, 3000); // scanner animation duration
+  hero.style.display = 'block';
+  video.play();
 });
+
 
 
 function changeSlide(element) {
