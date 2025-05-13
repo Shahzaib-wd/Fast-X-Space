@@ -10,24 +10,110 @@ html{
 }
 
 body{
-    font-family: 'Orbitron', sans-serif;
-  background-color: rgba(0, 0, 0, 0.788);
+  font-family: 'Orbitron', sans-serif;
+  background: linear-gradient(to right, #0b0e1a, #12162a);
   color: white;    
+  width: 100%;
 }
 
 .main-h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 60vh;
+    height: 50vh;
     background: url(close-up-view-molten-lava-erupting-from-active-volcano.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
 
-}
-.main-h1 h1{
-      font-size: 3rem;
-      width: 100%;
 
 }
+.main-h1 h1{
+      width: 100%;
+     color: transparent;
+    -webkit-text-stroke: 1px #00d1ff;
+    text-shadow: 0 0 5px #00d1ff;
+    text-align: center;
+    font-size: 6rem;
+
+
+}
+.main-blogs h2{
+  color: #00d1ff;
+}
+
+hr{
+    width: 200px;
+    height: 4px;
+    background-color: #00f0ff;
+    border: none;
+    box-shadow: 0 0 15px #00f0ff;
+}
+.main-blogs img{
+  height: 300px;
+}
+.main-blogs{
+  padding: 40px;
+}
+.main-blogs h3{
+  color: #00d1ff;
+}
+
+
+
+    .space-article {
+      max-width: 900px;
+      margin: 50px auto;
+      padding: 30px;
+      background-color: black;
+      border-left: 8px solid #00d1ff;
+      border-radius: 12px;
+      box-shadow: 0 0 15px #00d1ff;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    .space-article h2 {
+      color: #00f0ff;
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+
+    .space-article p {
+      font-size: 1.1em;
+      line-height: 1.8;
+      color: white;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+
+    #list{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 100px;
+    }
+
+    .list .heading h2{
+
+    }
+
+    .news{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      gap: 15px;
+      margin-bottom: 20px;
+      color: black;
+      background-color: rgba(255, 255, 255, 0.144);
+    }
+
+    .news img{
+      height: 100px;
+      width: 100px;
+    }
