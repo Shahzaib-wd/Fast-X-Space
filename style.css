@@ -4,9 +4,7 @@
   box-sizing: border-box;
 }
 
-*, a, button {
-  cursor: none !important;
-}
+
 
 
 html{
@@ -23,7 +21,6 @@ body {
     color: #ffffff;
     font-family: 'Orbitron', sans-serif;
     width: 100%;
-    cursor: none !important;
 
     
   }

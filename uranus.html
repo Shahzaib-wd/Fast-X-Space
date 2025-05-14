@@ -196,36 +196,7 @@
   </div>
 </footer>
 
-<div class="cursor-glow" id="cursorGlow"></div>
-<img src="img/cursor.png" class="cursor-img" id="cursorImg" />
-<script>
 
-
-      const glow = document.getElementById("cursorGlow");
-const img = document.getElementById("cursorImg");
-
-let timeout;
-
-document.addEventListener("mousemove", (e) => {
-  glow.style.left = img.style.left = e.clientX + "px";
-  glow.style.top = img.style.top = e.clientY + "px";
-
-  glow.style.opacity = 1;
-
-  clearTimeout(timeout);
-  timeout = setTimeout(() => {
-    glow.style.opacity = 0; // Hide glow if idle
-  }, 1000);
-});
-
-document.addEventListener("mousedown", () => {
-  glow.classList.add("cursor-click");
-});
-
-document.addEventListener("mouseup", () => {
-  glow.classList.remove("cursor-click");
-});
-</script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
 </body>

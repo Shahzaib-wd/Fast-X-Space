@@ -9,38 +9,7 @@ html{
 }
 
 
-*, a, button {
-  cursor: none !important;
-}
 
-.cursor-glow {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: #00ffff; 
-  position: fixed;
-  pointer-events: none;
-  z-index: 9998;
-  transform: translate(-50%, -50%);
-  transition: transform 0.15s ease, background-color 0.3s ease, opacity 0.4s;
-  backdrop-filter: blur(2px);
-  mix-blend-mode: difference;
-}
-
-.cursor-img {
-  width: 30px;
-  height: 30px;
-  position: fixed;
-  pointer-events: none;
-  z-index: 9999;
-  transform: translate(-50%, -50%);
-  transition: transform 0.1s ease;
-}
-
-.cursor-click {
-  transform: translate(-50%, -50%) scale(0.6);
-  background-color: blue;
-}
 
 body{
   font-family: 'Orbitron', sans-serif;
@@ -50,7 +19,7 @@ body{
 
 .navbar {
   backdrop-filter: blur(10px) !important;   
-  border: 1px solid rgba(0, 255, 255, 0.2);
+  border: 1px solid #00ffff33;
   box-shadow: 0 0 20px #00f0ff33;
   position: fixed;
   width: 100%;
