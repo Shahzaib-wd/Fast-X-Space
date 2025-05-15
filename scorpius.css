@@ -95,7 +95,7 @@ header {
 
 header h1 {
     color: transparent;
-    -webkit-text-stroke: 1px #00d1ff;
+    -webkit-text-stroke: 1px #00f0ff;
     text-align: center;
 }
 
@@ -110,7 +110,7 @@ section {
 }
 
 section h2 {
-    color: #00d1ff;
+    color: #00f0ff;
     margin-bottom: 10px;
 }
 
@@ -163,7 +163,7 @@ img {
   }
 
   .footer-link:hover {
-    color: #00ffff;
+    color: #00f0ff;
     transform: translateY(-3px);
   }
 

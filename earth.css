@@ -16,6 +16,8 @@ body{
 
 
 
+
+
 .navbar {
   backdrop-filter: blur(10px) !important;   
   border: 1px solid rgba(0, 255, 255, 0.2);
@@ -160,7 +162,7 @@ body{
   justify-content: center;
   align-items: center;
   height: 70vh;
-  background-image: url("img/mercury.webp");
+  background-image: url("earthnew.jpg");
   background-size:cover;
   font-weight: bolder;
   width: auto;
