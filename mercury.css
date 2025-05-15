@@ -10,7 +10,7 @@ html{
 }
 body{
     font-family: 'Orbitron', sans-serif;
-    background-color: rgba(0, 0, 0, 0.788);
+    background: linear-gradient(to right, #0b0e1a, #12162a);
     
 }
 
@@ -134,26 +134,7 @@ body{
     padding-bottom: 10px;
 }
 
-/* Jupiter Content */
-.earth-basics {
-    display: flex;
-    flex-wrap: wrap;
-    background: rgba(255, 255, 255, 0.05);
-    border-radius: 15px;
-    backdrop-filter: blur(10px);
-    box-shadow: 0 0 25px rgba(0, 212, 255, 0.2);
-    overflow: hidden;
-    padding: 30px;
-    gap: 30px;
-    transition: all 0.3s ease-in-out;
-}
 
-.earth-text {
-    width: auto;
-    flex: 1;
-    font-size: 18px;
-    line-height: 1.8;
-}
 
 .earth-image img:hover {
     transform: rotate(360deg);
@@ -181,15 +162,20 @@ body{
 
 .earth-basics{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     height: auto;
+    width: auto;
     gap: 10px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 25px rgba(0, 212, 255, 0.2);
 }
 
 .earth-basics p{
-    width: 500px;
+    width: auto;
     line-height: 45px;
     font-size: 1.5rem;
     background-color: rgba(0, 0, 0, 0.014);
@@ -238,6 +224,10 @@ body{
     color: #e8f5e9;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
 }
+.life-on-earth img{
+  border-radius: 12px;
+}
+
 
 .life-on-earth h2 {
     text-align: center;

@@ -318,99 +318,145 @@ body {
 
   
 
+/* HERO SECTION */
+.hero-section {
+  height: 100vh;
+  background: url('planet-earth-astronaut-stands-on-the-looking-at_9601215.jpg!w700wp.webp') no-repeat center center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+  padding-left: 10%;
+  position: relative;
+  overflow: hidden;
+  transition: background-image 0.5s ease-in-out, opacity 0.5s ease-in-out;
 
+}
+
+/* HERO TITLE */
+.hero-content h1 {
+  font-size: 3rem;
+  position: absolute;
+  bottom: 50%;
+  color: transparent;
+  -webkit-text-stroke: 1px #00ffff;
+  text-shadow: 0 0 8px rgba(0, 255, 255, 0.3);
+  z-index: 1;
+  animation: fadeInDown 1s ease forwards;
+}
+
+.hero-section.fade-out {
+  opacity: 0;
+}
+
+.hero-section.fade-in {
+  opacity: 1;
+}
+
+/* HERO BUTTON */
+.hero-content a {
+  position: absolute;
+  bottom: 40%;
+  display: inline-block;
+  background: #00ffff;
+  padding: 12px 25px;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+  margin-top: 20px;
+  z-index: 1;
+}
+
+.hero-content a:hover {
+  box-shadow: 0 0 20px #00ffff;
+  transform: scale(1.07);
+}
+
+/* PLANET SLIDER */
+.slider {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 60px;
+  overflow-x: auto;
+  backdrop-filter: blur(10px);
+  background: rgba(0, 0, 0, 0.4);
+  padding: 15px 20px;
+  box-shadow: 0 -5px 20px rgba(0, 255, 255, 0.1);
+}
+
+/* SLIDE ITEMS */
+.slide-item {
+  min-width: 100px;
+  cursor: pointer;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.slide-item img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid black;
+  transition: 0.3s;
+}
+
+.slide-item:hover img {
+  transform: scale(1.05);
+  border-color: #00ffff;
+  box-shadow: 0 0 10px #00ffff;
+}
+
+/* PLANET LABEL */
+.overlay {
+  margin-top: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #00ffff;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
   .hero-section {
-    height: 100vh;
-    background: url(planet-earth-astronaut-stands-on-the-looking-at_9601215.jpg!w700wp.webp);
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    position: relative;
+    padding-left: 5%;
+    align-items: flex-start;
+  }
+  .slider{
+    left: 0;
   }
 
   .hero-content h1 {
-    font-size: 3rem;
-    margin-bottom: 10px;
-    color: transparent;
-    -webkit-text-stroke: 1px #00ffff;
-    position: absolute;
-    top: 50%;
-    left: 10%;
-  }
-
-  .hero-content a {
-    display: inline-block;
-    background: #00ffff;
-    padding: 12px 25px;
-    color: black;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 8px;
-    transition: 0.3s;
-    position: absolute;
-    top: 60%;
-    left: 10%;
-  }
-
-  .hero-content a:hover {
-    box-shadow: 0 0 20px #00ffff;
-    transition: all 0.3s ease-in-out;
-    transform: scale(1.07);
-    color: black;
+    font-size: 2rem;
+    color: #00ffff;
+    -webkit-text-stroke: 0;
   }
 
   .slider {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    overflow-x: auto;
-    gap: 25px;
-    backdrop-filter: blur(10px);
-    padding: 15px 10px;
+    gap: 15px;
+    padding: 10px;
   }
+}
 
-  .slide-item {
-    min-width: 100px;
-    cursor: pointer;
-    text-align: center;
+/* ANIMATIONS */
+@keyframes fadeInDown {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
   }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
 
-  .slide-item img {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    border-radius: 10px;
-    border: 2px solid black;
-    transition: 0.3s;
-  }
-
-  .slide-item:hover img {
-    transform: scale(1.05);
-    border-color: #00ffff;
-  }
-
-  .overlay {
-    margin-top: 5px;
-    font-size: 14px;
-  }
-
-  @media (max-width: 768px) {
-    .hero-content h1 {
-      font-size: 2rem;
-      color: #00ffff;
-    }
-    .hero-content {
-      padding: 20px;
-    }
-  }
 
 
 
