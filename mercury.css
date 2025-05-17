@@ -165,8 +165,7 @@ body{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    height: auto;
-    width: auto;
+
     gap: 10px;
     background: rgba(255, 255, 255, 0.05);
     border-radius: 15px;
@@ -210,6 +209,7 @@ body{
     font-size: 18px;
     padding: 8px 0;
     border-bottom: 1px solid #ccc;
+    
 }
 
 .basic-facts li:last-child {
@@ -240,7 +240,7 @@ body{
 }
 
 .life-on-earth ul {
-    width: 400px;
+  width: 450px;
     list-style-type: none;
     padding: 0;
 }
@@ -248,10 +248,10 @@ body{
 .life-data{
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
     gap: 30px;
     align-items: center;
-    height: auto;
-    flex-wrap: wrap;
 }
 
 .life-on-earth li {
