@@ -117,7 +117,7 @@ body{
         gap: 20px;
     }
     section .text{
-        width: 500px;
+        width: 400px;
     }
 
     section img{
@@ -128,7 +128,7 @@ body{
     }
 
     hr {
-    width: 400px;
+    width: 300px;
     height: 4px;
     background-color: #00f0ff;
     box-shadow: 0 0 15px #00f0ff;
