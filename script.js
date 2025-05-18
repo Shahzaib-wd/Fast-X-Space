@@ -24,18 +24,6 @@ function changeSlide(element) {
 
 
 
-
-  window.addEventListener('load', function () {
-    const preloader = document.getElementById('preloader');
-    setTimeout(() => {
-      preloader.style.display = 'none';
-      document.querySelector('.main-content').style.display = 'block';
-    }, 1600); // Matches slideDown timing
-  });
-  
-
-
-
    // Show/hide button
    window.onscroll = function () {
     const btn = document.getElementById("backToTop");
