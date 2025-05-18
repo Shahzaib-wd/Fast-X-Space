@@ -1,11 +1,3 @@
-window.addEventListener('load', () => {
-  const hero = document.getElementById('hero');
-  const video = document.getElementById('hero-video');
-
-  hero.style.display = 'block';
-  video.play();
-});
-
 
 
 function changeSlide(element) {
