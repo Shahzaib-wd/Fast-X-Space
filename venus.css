@@ -216,7 +216,7 @@ body{
 
 /* Life on Jupiter */
 .life-on-earth {
-    background: linear-gradient(to right, 	#a57c1b,	#c18f17,	#e39e1c,	#f9c21a,#e7d520);
+    background: linear-gradient(to right, 	#a57c1b,#c18f17,	#e39e1c,#f9c21a,#e7d520);
     padding: 30px;
     border-radius: 12px;
     color: #e8f5e9;
