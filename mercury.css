@@ -292,7 +292,7 @@ body{
 
 .download a{
     background-color: #00e0ff;
-    color: black;
+    color: black !important; 
   }
   
   .download a:hover{
