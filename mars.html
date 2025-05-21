@@ -18,11 +18,11 @@
   <div class="container-fluid">
 
     <!-- Logo -->
-    <a class="navbar-brand me-4" href="index.html">
+    <a class="navbar-brand" href="index.html">
       <img src="fastxspace.png" alt="logo" class="logo-img" />
     </a>
 
-    <!-- 🔧 Mobile Toggler moved up -->
+    <!-- ✅ Mobile Toggler should be above collapse div -->
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -37,7 +37,7 @@
             <li><a class="dropdown-item" href="mercury.html">Mercury</a></li>
             <li><a class="dropdown-item" href="venus.html">Venus</a></li>
             <li><a class="dropdown-item" href="earth.html">Earth</a></li>
-            <li><a class="dropdown-item" href="#">Mars</a></li>
+            <li><a class="dropdown-item" href="mars.html">Mars</a></li>
             <li><a class="dropdown-item" href="jupiter.html">Jupiter</a></li>
             <li><a class="dropdown-item" href="saturn.html">Saturn</a></li>
             <li><a class="dropdown-item" href="uranus.html">Uranus</a></li>
@@ -56,11 +56,15 @@
         </li>
         <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
       </ul>
+          <!-- Side Button for mobile-->
+  <div class="d-block d-lg-none ms-0">
+      <a href="#newsletter" class="btn btn-outline-light ms-3">Get in Touch</a>
+    </div>
     </div>
 
     <!-- Side Button -->
     <div class="d-none d-lg-block">
-      <a href="index.html#newsletter" class="btn btn-outline-light ms-3">Get in Touch</a>
+      <a href="#newsletter" class="btn btn-outline-light ms-3">Get in Touch</a>
     </div>
 
   </div>

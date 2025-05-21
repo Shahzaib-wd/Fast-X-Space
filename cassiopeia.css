@@ -19,7 +19,7 @@
     position: fixed;
     width: 100%;
     z-index: 999;
-
+    align-items: center;
 
   }
   
@@ -122,14 +122,14 @@
       border-radius: 10px;
       text-align: center;
     }
-    ul{
+    section ul{
         list-style: none;
     }
     section h2 {
       color: #00f0ff;
       margin-bottom: 10px;
     }
-    img {
+    section img {
       max-width: 100%;
       border-radius: 10px;
       margin-top: 10px;
