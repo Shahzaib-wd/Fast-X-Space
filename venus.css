@@ -119,14 +119,13 @@ body{
 }
 
 /* Jupiter glow animation */
-
 @keyframes glow {
-    0% {
-        text-shadow: 0 0 10px #ff6f00;
-    }
-    100% {
-        text-shadow: 0 0 20px #ff6f00, 0 0 30px #ffab40;
-    }
+  0% {
+      text-shadow: 0 0 10px #00d4ff;
+  }
+  100% {
+      text-shadow: 0 0 20px #00d4ff, 0 0 30px #00bcd4;
+  }
 }
 
 .container {
@@ -229,7 +228,7 @@ body{
 
 /* Life on Jupiter */
 .life-on-earth {
-    background: linear-gradient(to right, 	#a57c1b,	#c18f17,	#e39e1c,	#f9c21a,#e7d520);
+    background: linear-gradient(to right, 	#a57c1b,#c18f17,	#e39e1c,#f9c21a,#e7d520);
     padding: 30px;
     border-radius: 12px;
     color: #e8f5e9;

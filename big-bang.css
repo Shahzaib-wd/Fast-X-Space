@@ -112,8 +112,15 @@ body{
         font-size: 3rem;
         color: transparent;
         -webkit-text-stroke: 2px #00f0ff;
-        text-shadow: 0 0 20px #00f0ff;
+       animation: glow 2s infinite alternate;
     }
+    @keyframes glow {
+      0% {
+          text-shadow: 0 0 10px #00d4ff;
+      }
+      100% {
+          text-shadow: 0 0 20px #00d4ff, 0 0 30px #00bcd4;
+      }}
     section {
       padding: 60px 20px;
       border: 1 px solid #00f0ff;
