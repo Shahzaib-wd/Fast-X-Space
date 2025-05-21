@@ -510,7 +510,7 @@ body {
       padding: 2rem;
     }
 
-    @media (min-width: 768px) {
+    @media (min-width: 850px) {
       .sun-moon {
         flex-direction: row;
         justify-content: space-around;
@@ -563,7 +563,7 @@ body {
     }
 
     /* Responsive Fonts */
-    @media (max-width: 768px) {
+    @media (max-width: 770px) {
       .header-title {
         font-size: 2rem;
         text-align: center;
@@ -574,8 +574,8 @@ body {
       }
 
           .image-div img {
-      max-width: 300x;
-      height: 300px;
+      max-width: auto;
+      height: auto;
 
     }
     }
