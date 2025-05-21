@@ -519,7 +519,7 @@ body {
 
     .section-container {
       flex: 1;
-      background-color: #1f1f2e;
+      background-color: rgba(0, 0, 0, 0.201);
       border-radius: 12px;
       padding: 1.5rem;
       transition: all 0.3s ease;
