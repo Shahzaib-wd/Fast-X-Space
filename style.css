@@ -490,6 +490,95 @@ body {
 
 
 
+    .header-container {
+      text-align: center;
+      padding: 2rem;
+      background:transparent;
+      color: #00f0ff;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+    }
+
+    .header-title {
+      font-size: 2.5rem;
+      font-weight: bold;
+    }
+
+    .sun-moon {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      padding: 2rem;
+    }
+
+    @media (min-width: 768px) {
+      .sun-moon {
+        flex-direction: row;
+        justify-content: space-around;
+      }
+    }
+
+    .section-container {
+      flex: 1;
+      background-color: #1f1f2e;
+      border-radius: 12px;
+      padding: 1.5rem;
+      transition: all 0.3s ease;
+    }
+
+    .section-container:hover {
+      transform: scale(1.02);
+      box-shadow: 0 0 10px #00f0ff;
+
+    }
+
+    .title h2 {
+      font-size: 2rem;
+      color: #00f0ff;
+      margin-bottom: 0.5rem;
+    }
+
+    .section-container hr {
+    width: 120px;
+    height: 4px;
+    background-color: #00f0ff;
+    box-shadow: 0 0 15px #00f0ff;
+    }
+
+    .image-div {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    .image-div img {
+      max-width: 100%;
+      height: 400px;
+
+    }
+
+    .sun-facts li,
+    .moon-facts li {
+      margin-bottom: 0.6rem;
+      line-height: 1.6;
+      list-style-position: inside;
+    }
+
+    /* Responsive Fonts */
+    @media (max-width: 768px) {
+      .header-title {
+        font-size: 2rem;
+        text-align: center;
+      }
+
+      .title h2 {
+        font-size: 1.5rem;
+      }
+
+          .image-div img {
+      max-width: 300x;
+      height: 300px;
+
+    }
+    }
 
   #astronomy-updates {
     background: linear-gradient(to right, #0b0e1a, #12162a);
@@ -509,7 +598,7 @@ body {
   
   #astronomy-updates .section-title {
     color: #00f0ff;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     text-shadow: 0 0 10px #00f0ff88;
   }
   

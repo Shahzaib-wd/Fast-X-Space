@@ -69,6 +69,19 @@ body{
     background-color: #1b1e3b;
     color: #00f0ff;
   }
+
+    /* Button Styling */
+  .btn-outline-light {
+    border-color: #00f0ff;
+    color: #00f0ff;
+    transition: 0.3s;
+  }
+  
+  .btn-outline-light:hover {
+    background-color: #00f0ff;
+    color: #0d0f24;
+    box-shadow: 0 0 10px #00f0ff;
+  }
   
 
   
