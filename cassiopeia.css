@@ -176,8 +176,9 @@
   }
 
   .footer h5 {
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     font-weight: bold;
+    color: #00f0ff;
   }
 
   /* Social icon spacing */
