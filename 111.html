@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FAST X SPACE - Footer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  
+  <style>
+    body {
+      background-color: #111;
+      color: #fff;
+    }
+    .footer {
+      background: rgba(0, 0, 0, 0.71);
+    }
+    .footer-link {
+      color: #00ffff;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    .footer-link:hover {
+      color: #ffffff;
+      text-decoration: underline;
+    }
+    .footer h5, .footer h6 {
+      color: #00ffff;
+      text-shadow: 0 0 8px #00ffff;
+    }
+    .footer input[type="email"] {
+      background-color: rgba(255, 255, 255, 0.1);
+      border: 1px solid #00ffff;
+      color: #fff;
+    }
+    .footer input[type="email"]::placeholder {
+      color: #aaa;
+    }
+    .footer input[type="email"].is-invalid {
+      border-color: #ff4d4d;
+    }
+    .footer button[type="submit"] {
+      border-color: #00ffff;
+      color: #00ffff;
+    }
+    .footer button[type="submit"]:hover {
+      background-color: #00ffff;
+      color: #000;
+    }
+    #newsletterFeedback {
+      color: #ff4d4d;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <footer class="footer text-light py-5">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-4 mb-4 mb-md-0 d-flex align-items-center flex-column text-center text-md-start">
+          <a href="index.html">
+            <img src="fastxspace.png" alt="FAST X SPACE" width="180" class="me-2" />
+          </a>
+          <h4 style="margin: 0; font-size: 1.2rem; font-weight: bold; -webkit-text-stroke: 1px #00ffff; color: transparent;">
+            FAST <span style="color: #00ffff; -webkit-text-stroke: 0;">X</span> SPACE
+          </h4>
+        </div>
+
+        <div class="col-md-4 mb-4 mb-md-0">
+          <h5 class="mb-3">Explore Planets</h5>
+          <ul class="list-unstyled">
+            <li><a href="mercury.html" class="footer-link">Mercury</a></li>
+            <li><a href="venus.html" class="footer-link">Venus</a></li>
+            <li><a href="earth.html" class="footer-link">Earth</a></li>
+            <li><a href="mars.html" class="footer-link">Mars</a></li>
+            <li><a href="jupiter.html" class="footer-link">Jupiter</a></li>
+            <li><a href="saturn.html" class="footer-link">Saturn</a></li>
+            <li><a href="uranus.html" class="footer-link">Uranus</a></li>
+            <li><a href="neptune.html" class="footer-link">Neptune</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-4">
+          <h5 class="mb-3">Contact</h5>
+          <ul class="list-unstyled">
+            <li>Email: <a href="mailto:tayyabbro@gmail.com" class="footer-link">TayyabBro@gmail.com</a></li>
+            <li>Phone: <a href="tel:+923212250721" class="footer-link">+92321 2250 721</a></li>
+            <li>
+              <a href="https://github.com/shahzaib-wd" class="footer-link" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-github"></i> GitHub
+              </a> |
+              <a href="https://www.facebook.com" class="footer-link" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-facebook"></i> Facebook
+              </a> |
+              <a href="https://www.linkedin.com" class="footer-link" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-linkedin"></i> LinkedIn
+              </a>
+            </li>
+          </ul>
+
+          <!-- Newsletter Subscription -->
+          <div class="mt-4">
+            <h6 class="text-uppercase mb-2">Subscribe to Our Newsletter</h6>
+            <form id="newsletterForm" class="needs-validation d-flex flex-column flex-sm-row" novalidate>
+              <input 
+                type="email" 
+                name="email" 
+                class="form-control me-sm-2 mb-2 mb-sm-0" 
+                placeholder="Your email" 
+                required 
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+              >
+              <button type="submit" class="btn btn-outline-info">Subscribe</button>
+              <div class="invalid-feedback d-block mt-1" id="newsletterFeedback"></div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+      <hr class="border-top border-secondary mt-4" />
+      <p class="text-center mb-0" style="font-size: 0.9rem;">&copy; 2025 FAST X SPACE. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS (optional, but good for responsiveness) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Newsletter Validation Script -->
+  <script>
+    document.getElementById('newsletterForm').addEventListener('submit', function (e) {
+      const form = e.target;
+      const emailInput = form.email;
+      const feedback = document.getElementById('newsletterFeedback');
+
+      if (!form.checkValidity()) {
+        e.preventDefault();
+        e.stopPropagation();
+        feedback.textContent = "Please enter a valid email address.";
+        emailInput.classList.add("is-invalid");
+      } else {
+        feedback.textContent = "";
+        emailInput.classList.remove("is-invalid");
+        alert("Thank you for subscribing!");
+        // e.preventDefault(); // Uncomment if you don't want actual submission
+      }
+
+      form.classList.add('was-validated');
+    });
+  </script>
+
+</body>
+</html>

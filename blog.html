@@ -251,6 +251,26 @@
             </a>
           </li>
         </ul>
+
+                          <!-- Newsletter Subscription -->
+          <div class="mt-4">
+            <h6 class="text-uppercase mb-2">Subscribe to Our Newsletter</h6>
+            <form id="newsletterForm" class="needs-validation d-flex flex-column flex-sm-row" novalidate>
+              <div class="inputt flex-column">
+              <input 
+                type="email" 
+                name="email" 
+                class="form-control me-sm-2 mb-2 mb-sm-0" 
+                placeholder="Your email" 
+                required 
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+              >
+             <div class="invalid-feedback d-block mt-1" id="newsletterFeedback"></div>
+             </div>
+
+              <button type="submit" class="btn btn-outline-info">Subscribe</button>
+            </form>
+          </div>
       </div>
 
     </div>
@@ -277,6 +297,28 @@
       emailInput.value = ""; 
     }
   });
+
+      // newslettre footer
+
+        document.getElementById('newsletterForm').addEventListener('submit', function (e) {
+      const form = e.target;
+      const emailInput = form.email;
+      const feedback = document.getElementById('newsletterFeedback');
+
+      if (!form.checkValidity()) {
+        e.preventDefault();
+        e.stopPropagation();
+        feedback.textContent = "Please enter a valid email address.";
+        emailInput.classList.add("is-invalid");
+      } else {
+        feedback.textContent = "";
+        emailInput.classList.remove("is-invalid");
+        alert("Thank you for subscribing!");
+        e.preventDefault();
+      }
+
+      form.classList.add('was-validated');
+    });
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
 

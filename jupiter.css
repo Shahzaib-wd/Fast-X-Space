@@ -352,3 +352,9 @@ body {
     display: inline-flex;
     align-items: center;
   }
+
+
+        #newsletterFeedback {
+      color: #ff4d4d;
+      font-size: 0.9rem;
+    }
